@@ -1,0 +1,91 @@
+html {
+	overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 900;
+    color: #000000; /* Black text color */
+    background-color: #ffffff; /* White background */
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+	text-align: center;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-logo {
+    height: 60px;
+}
+
+.nav-gradient {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	transform: translateY(-50%);
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 30%);
+}
+
+.nav-links a {
+    color: white; /* Slightly off-black color */
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 40px;
+	margin-right: 40px;
+    transition: color 0.3s;
+	font-size: 25px;
+}
+
+.nav-links a:hover {
+    color: #960b00;
+}
+
+/* Home Page */
+body.home {
+    background: url('canopyroad.png') no-repeat center center fixed;
+    background-size: cover;
+	overflow: relative;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-logo {
+    width: 30%;
+    fill: white;
+}
+
+/* About Page */
+body.about {
+    background: url('canopyroad.png') no-repeat center center fixed;
+	background-size: cover;
+	overflow: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%);
+    border-radius: 10px;
+	color: white;
+	font-size: 30px;
+	font-weight: 600;
+}
