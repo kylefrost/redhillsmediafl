@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
 html {
 	overflow-x: hidden;
 }
@@ -6,7 +8,6 @@ body {
     margin: 0;
     font-family: 'Commissioner', sans-serif;
     font-weight: 900;
-    color: #000000; /* Black text color */
     background-color: #ffffff; /* White background */
 }
 
@@ -21,10 +22,6 @@ nav {
 	justify-content: center;
 }
 
-.nav-logo {
-    height: 60px;
-}
-
 .nav-gradient {
 	position: absolute;
 	width: 100vw;
@@ -32,6 +29,7 @@ nav {
 	transform: translateY(-50%);
 	background: rgb(0,0,0);
 	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 30%);
+	z-index: -1;
 }
 
 .nav-links a {
